@@ -1,9 +1,9 @@
 preferred_syntax = :sass
 http_path = '/'
-css_dir = '_assets/_stylesheets'
-sass_dir = '_assets/_sass'
-images_dir = '_assets/_images'
-javascripts_dir = '_assets/_js'
+css_dir = 'assets/stylesheets'
+sass_dir = 'assets/sass'
+images_dir = 'assets/images'
+javascripts_dir = 'assets/js'
 relative_assets = true
 line_comments = true
 # output_style = :compressed

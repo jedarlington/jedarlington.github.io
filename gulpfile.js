@@ -11,9 +11,9 @@ var imagemin = require('gulp-imagemin');
 
 var paths = {
 	/* sass: ['_assets/_sass/*.scss'], */
-	compass: ['_assets/_sass/*.scss'],
-	scripts: ['_assets/_js/*.js'],
-	images: ['_assets/_images/*']
+	compass: ['assets/sass/*.scss'],
+	scripts: ['assets/js/*.js'],
+	images: ['assets/images/*']
 };
 
 // Task Sass
@@ -29,8 +29,8 @@ gulp.task('compass', function() {
 	gulp.src(paths.compass)
 	.pipe(compass({
 		config_file: './config.rb',
-		css: '_assets/_stylesheets',
-		sass: '_assets/_sass'
+		css: 'assets/stylesheets',
+		sass: 'assets/sass'
 	}))
 	.pipe(gulp.dest('_build/_css'));
 });
@@ -40,14 +40,14 @@ gulp.task('scripts', function() {
 	return gulp.src(paths.scripts)
 	.pipe(uglify())
 	.pipe(concat('all.min.js'))
-	.pipe(gulp.dest('_build/_js'));
+	.pipe(gulp.dest('build/js'));
 });
 
 // Task Images
 gulp.task('images', function() {
 	return gulp.src(paths.images)
 	.pipe(imagemin())
-	.pipe(gulp.dest('_build/_images'));
+	.pipe(gulp.dest('build/images'));
 });
 
 // Rerun the task when a file changes
