@@ -4,25 +4,18 @@ var gulp = require('gulp');
 // Include plugins
 /* var sass = require('gulp-sass'); */
 var compass = require('gulp-compass');
+var csslint = require('gulp-csslint');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
+var jshint = require('gulp-jshint');
 var rename = require('gulp-rename');
 var imagemin = require('gulp-imagemin');
 
 var paths = {
-	/* sass: ['_assets/_sass/*.scss'], */
-	compass: ['assets/sass/*.scss'],
-	scripts: ['assets/js/*.js'],
-	images: ['assets/images/*']
+	compass: ['assets/sass/**/*.scss'],
+	js: ['assets/js/libs/*.js'],
+	images: ['assets/images/**/*']
 };
-
-// Task Sass
-/*gulp.task('sass', function() {
-	return gulp.src(paths.sass)
-	.pipe(sass({ errLogToConsole : true }))
-	.pipe(sass({ includePaths : ['/libs/']}))
-	.pipe(gulp.dest('build/css'));
-});*/
 
 // Task Compass
 gulp.task('compass', function() {
@@ -32,15 +25,30 @@ gulp.task('compass', function() {
 		css: 'assets/stylesheets',
 		sass: 'assets/sass'
 	}))
-	.pipe(gulp.dest('_build/_css'));
+	.pipe(gulp.dest('build/css'));
 });
 
-// Task JS
-gulp.task('scripts', function() {
-	return gulp.src(paths.scripts)
+// Task CSS Lint
+gulp.task('csslint', function() {
+	gulp.src('assets/sass/main.scss')
+	.pipe(csslint())
+	.pipe(csslint.reporter());
+});
+
+// Task js
+gulp.task('js', function() {
+	return gulp.src(paths.js)
 	.pipe(uglify())
 	.pipe(concat('all.min.js'))
 	.pipe(gulp.dest('build/js'));
+});
+
+// Task JSHint
+gulp.task('jshint', function() {
+	return gulp.src('assets/js/main.js')
+	.pipe(jshint())
+	.pipe(jshint.reporter('default'))
+	.pipe(jshint.reporter('fail'));
 });
 
 // Task Images
@@ -52,10 +60,11 @@ gulp.task('images', function() {
 
 // Rerun the task when a file changes
 gulp.task('watch', function() {
-	gulp.watch(paths.sass, ['compass']);
-	gulp.watch(paths.scripts, ['scripts']);
-	gulp.watch(paths.images, ['images']);
+    gulp.watch(paths.scripts, ['js']);
+    gulp.watch(paths.scripts, ['jshint']);
+    gulp.watch(paths.compass, ['compass']);
+    //gulp.watch(paths.compass, ['csslint']);
 });
 
 // The default task (called when you run 'gulp' from cli)
-gulp.task('default', ['compass', 'scripts', 'images']);
+gulp.task('default', ['compass', 'js', 'jshint', 'images', 'watch']);

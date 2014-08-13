@@ -1,12 +1,205 @@
+@import "compass/reset";
+
+/* Compass Imports */
+@import "compass/css3/transition";
+@import "compass/css3/border-radius";
+@import "rgbapng";
+
+@import "libs/bootstrap";
+@import "libs/variables";
+
 body {
-	background: #fff;
 	font-family: 'Helvetica', Arial, sans-serif;
+	padding-top: 3em;
 }
 
-div {
-	&.container {
-		margin: auto;
-		text-align: center;
-		width: 50%;
+/* Global */
+a {
+	cursor: pointer;
+
+	&:hover {
+		text-decoration: none;
 	}
 }
+
+img {
+	width: 100%;
+}
+
+ul {
+	list-style: none;
+}
+
+/* Main Navigation */
+nav.navbar {
+	background-color: #333;
+
+	a {
+		color: $link;
+		text-transform: uppercase;
+
+		&:hover {
+			color: $link-hover;
+		}
+
+		&.navbar-brand {
+			color: $theme-color;
+			font-size: 2em;
+		}
+	}
+}
+
+/* Blocks */
+.block {
+	padding: 2.5em 0 3em;
+
+	&.theme {
+		background-color: $theme-color;
+		color: #fff;
+	}
+
+	&.white {
+		background-color: #ddd;
+		color: $block-white-color;
+
+		a {
+			color: $block-white-color;
+		}
+	}
+
+	&#intro {
+		padding: 3em 0;
+		text-transform: uppercase;
+
+		h1 {
+			color: $heading;
+			font-weight: bold;
+			margin: 0;
+		}
+
+		h2 {
+			color: $slogan;
+			font-weight: bold;
+			margin: 0;
+		}
+	}
+
+	&#work {
+		div {
+			&.work-gallery {
+				background: url("../images/imac.png") no-repeat;
+				background-size: contain;
+				height: 30em;
+				width: 100%;
+			}
+
+			&.work-image {
+				padding: 2em;
+			}
+		}
+	}
+
+	&#about {
+		img {
+			width: 50%;
+
+			@include border-radius(230px, 250px);
+		}
+	}
+
+	&#contact {
+		button {
+			&.contact {
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+/* Footer */
+footer {
+	a {
+		&#back-top-top {
+			span {
+
+			}
+		}
+	}
+
+	ul {
+			overflow: hidden;
+
+			&.social-icons {
+				li {
+					cursor: pointer;
+					display: inline-block;
+					height: 48px;
+					width: 48px;
+
+					@include transition(all 0.5s ease-in-out);
+
+					&.facebook {
+						background: url("../images/social-icons/PNG/facebook.png");
+
+						&:hover {
+							background: url("../images/social-icons/PNG/facebook-gray.png");
+						}
+					}
+
+					&.twitter {
+						background: url("../images/social-icons/PNG/twitter.png");
+
+						&:hover {
+							background: url("../images/social-icons/PNG/twitter-gray.png");
+						}
+					}
+
+					&.linkedin {
+						background: url("../images/social-icons/PNG/linkedin.png");
+
+						&:hover {
+							background: url("../images/social-icons/PNG/linkedin-gray.png");
+						}
+					}
+
+					&.googleplus {
+						background: url("../images/social-icons/PNG/googleplus.png");
+
+						&:hover {
+							background: url("../images/social-icons/PNG/googleplus-gray.png");
+						}
+					}
+
+					&.skype {
+						background: url("../images/social-icons/PNG/skype.png");
+
+						&:hover {
+							background: url("../images/social-icons/PNG/skype-gray.png");
+						}
+					}
+
+					&.github {
+						background: url("../images/social-icons/PNG/github.png");
+
+						&:hover {
+							background: url("../images/social-icons/PNG/github-gray.png");
+						}
+					}
+
+					&.email {
+						background: url("../images/social-icons/PNG/email.png");
+
+						&:hover {
+							background: url("../images/social-icons/PNG/email-gray.png");
+						}
+					}
+				}
+			}
+		}
+}
+
+@import "libs/mobile";
+
+
+
