@@ -60,7 +60,7 @@ gulp.task('images', function() {
 
 // Rerun the task when a file changes
 gulp.task('watch', function() {
-    gulp.watch(paths.scripts, ['scripts']);
+    gulp.watch(paths.scripts, ['js']);
     gulp.watch(paths.scripts, ['jshint']);
     gulp.watch(paths.compass, ['compass']);
     //gulp.watch(paths.compass, ['csslint']);
