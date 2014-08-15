@@ -8000,122 +8000,122 @@ button.close {
     display: none !important;
   }
 }
-/* Define main color to be used throught site */
+/* Define main colors to be used throught site */
 /* Heading */
 /* Links */
 /* Block - white background */
-/* line 11, ../sass/global.scss */
+/* line 29, ../sass/global.scss */
 body {
   font-family: 'Helvetica', Arial, sans-serif;
   padding-top: 3em;
 }
 
 /* Global */
-/* line 17, ../sass/global.scss */
+/* line 35, ../sass/global.scss */
 a {
   cursor: pointer;
 }
-/* line 20, ../sass/global.scss */
+/* line 38, ../sass/global.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 25, ../sass/global.scss */
+/* line 43, ../sass/global.scss */
 img {
   width: 100%;
 }
 
-/* line 29, ../sass/global.scss */
+/* line 47, ../sass/global.scss */
 ul {
   list-style: none;
 }
 
 /* Main Navigation */
-/* line 34, ../sass/global.scss */
+/* line 52, ../sass/global.scss */
 nav.navbar {
   background-color: #333;
 }
-/* line 37, ../sass/global.scss */
+/* line 55, ../sass/global.scss */
 nav.navbar a {
   color: #999999;
   text-transform: uppercase;
 }
-/* line 41, ../sass/global.scss */
+/* line 59, ../sass/global.scss */
 nav.navbar a:hover {
   color: #777777;
 }
-/* line 45, ../sass/global.scss */
+/* line 63, ../sass/global.scss */
 nav.navbar a.navbar-brand {
-  color: #36a957;
+  color: #4099ff;
   font-size: 2em;
 }
 
 /* Blocks */
-/* line 53, ../sass/global.scss */
+/* line 71, ../sass/global.scss */
 .block {
   padding: 2.5em 0 3em;
 }
-/* line 56, ../sass/global.scss */
+/* line 74, ../sass/global.scss */
 .block.theme {
-  background-color: #36a957;
+  background-color: #333;
   color: #fff;
 }
-/* line 61, ../sass/global.scss */
+/* line 79, ../sass/global.scss */
 .block.white {
   background-color: #ddd;
   color: #444444;
 }
-/* line 65, ../sass/global.scss */
+/* line 83, ../sass/global.scss */
 .block.white a {
   color: #444444;
 }
-/* line 70, ../sass/global.scss */
+/* line 88, ../sass/global.scss */
 .block#intro {
   padding: 3em 0;
   text-transform: uppercase;
 }
-/* line 74, ../sass/global.scss */
+/* line 92, ../sass/global.scss */
 .block#intro h1 {
-  color: #5a5a5a;
+  color: #4099ff;
   font-weight: bold;
   margin: 0;
 }
-/* line 80, ../sass/global.scss */
+/* line 98, ../sass/global.scss */
 .block#intro h2 {
   color: #999999;
   font-weight: bold;
   margin: 0;
 }
-/* line 89, ../sass/global.scss */
+/* line 107, ../sass/global.scss */
 .block#work div.work-gallery {
   background: url("../images/imac.png") no-repeat;
   background-size: contain;
   height: 30em;
   width: 100%;
 }
-/* line 96, ../sass/global.scss */
+/* line 114, ../sass/global.scss */
 .block#work div.work-image {
   padding: 2em;
 }
-/* line 103, ../sass/global.scss */
+/* line 121, ../sass/global.scss */
 .block#about img {
   width: 50%;
   -moz-border-radius: 230px / 250px;
   -webkit-border-radius: 230px 250px;
   border-radius: 230px / 250px;
 }
-/* line 112, ../sass/global.scss */
+/* line 130, ../sass/global.scss */
 .block#contact button.contact {
   font-weight: bold;
   text-transform: uppercase;
 }
 
 /* Footer */
-/* line 130, ../sass/global.scss */
+/* line 148, ../sass/global.scss */
 footer ul {
   overflow: hidden;
 }
-/* line 134, ../sass/global.scss */
+/* line 152, ../sass/global.scss */
 footer ul.social-icons li {
   cursor: pointer;
   display: inline-block;
@@ -8125,59 +8125,59 @@ footer ul.social-icons li {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-/* line 142, ../sass/global.scss */
+/* line 160, ../sass/global.scss */
 footer ul.social-icons li.facebook {
   background: url("../images/social-icons/PNG/facebook.png");
 }
-/* line 145, ../sass/global.scss */
+/* line 163, ../sass/global.scss */
 footer ul.social-icons li.facebook:hover {
   background: url("../images/social-icons/PNG/facebook-gray.png");
 }
-/* line 150, ../sass/global.scss */
+/* line 168, ../sass/global.scss */
 footer ul.social-icons li.twitter {
   background: url("../images/social-icons/PNG/twitter.png");
 }
-/* line 153, ../sass/global.scss */
+/* line 171, ../sass/global.scss */
 footer ul.social-icons li.twitter:hover {
   background: url("../images/social-icons/PNG/twitter-gray.png");
 }
-/* line 158, ../sass/global.scss */
+/* line 176, ../sass/global.scss */
 footer ul.social-icons li.linkedin {
   background: url("../images/social-icons/PNG/linkedin.png");
 }
-/* line 161, ../sass/global.scss */
+/* line 179, ../sass/global.scss */
 footer ul.social-icons li.linkedin:hover {
   background: url("../images/social-icons/PNG/linkedin-gray.png");
 }
-/* line 166, ../sass/global.scss */
+/* line 184, ../sass/global.scss */
 footer ul.social-icons li.googleplus {
   background: url("../images/social-icons/PNG/googleplus.png");
 }
-/* line 169, ../sass/global.scss */
+/* line 187, ../sass/global.scss */
 footer ul.social-icons li.googleplus:hover {
   background: url("../images/social-icons/PNG/googleplus-gray.png");
 }
-/* line 174, ../sass/global.scss */
+/* line 192, ../sass/global.scss */
 footer ul.social-icons li.skype {
   background: url("../images/social-icons/PNG/skype.png");
 }
-/* line 177, ../sass/global.scss */
+/* line 195, ../sass/global.scss */
 footer ul.social-icons li.skype:hover {
   background: url("../images/social-icons/PNG/skype-gray.png");
 }
-/* line 182, ../sass/global.scss */
+/* line 200, ../sass/global.scss */
 footer ul.social-icons li.github {
-  background: url("../images/social-icons/PNG/github.png");
-}
-/* line 185, ../sass/global.scss */
-footer ul.social-icons li.github:hover {
   background: url("../images/social-icons/PNG/github-gray.png");
 }
-/* line 190, ../sass/global.scss */
+/* line 203, ../sass/global.scss */
+footer ul.social-icons li.github:hover {
+  background: url("../images/social-icons/PNG/github.png");
+}
+/* line 208, ../sass/global.scss */
 footer ul.social-icons li.email {
   background: url("../images/social-icons/PNG/email.png");
 }
-/* line 193, ../sass/global.scss */
+/* line 211, ../sass/global.scss */
 footer ul.social-icons li.email:hover {
   background: url("../images/social-icons/PNG/email-gray.png");
 }
@@ -8186,7 +8186,7 @@ footer ul.social-icons li.email:hover {
   /* Main Navigation */
   /* line 5, ../sass/libs/_mobile.scss */
   nav.navbar span.icon-bar {
-    background-color: #36a957;
+    background-color: #4099ff;
   }
 
   /* Blocks */
