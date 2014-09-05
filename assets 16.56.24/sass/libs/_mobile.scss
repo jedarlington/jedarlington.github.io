@@ -1,0 +1,19 @@
+@media(max-width: 770px) {
+	/* Main Navigation */
+	nav.navbar {
+		span {
+			&.icon-bar {
+				background-color: $theme-color;
+			}
+		}
+	}
+
+	/* Blocks */
+		.block {
+			text-align: center;
+			
+			&#intro {
+				
+			}
+		}
+} /* END OF MEDIA QUERY */
