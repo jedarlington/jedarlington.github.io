@@ -4,16 +4,19 @@ disqus_shortname:
 reading_time:     true
 words_per_minute: 200
 #Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              http://localhost:4000
+#dev
+#url:              http://localhost:4000
+#live
+url:               http://www.jedarlington.co.uk
 
 # Owner/author information
 owner:
   name:           Jim Darlington
   avatar:         jim_b&w.png
-  bio:            "I am front end web developer currently working in Manchester."
+  bio:            "I am front end web developer currently working in Manchester and drinking Millicano."
   email:          jedarlington@me.com
   # Social networking links used in footer. Update and remove as you like.
-  twitter:  	  http://www.twitter.com/jedarlington      
+  twitter:  	    http://www.twitter.com/jedarlington      
   facebook:       https://www.facebook.com/jedarlington
   github:         https://github.com/jedarlington
   stackexchange:  http://stackexchange.com/users/1748699/jim-darlington
